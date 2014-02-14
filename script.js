@@ -8,6 +8,19 @@ angular.module('progressButtonDemo', [])
 			})
 		}
 	})
+	.controller('ProgressControlCtrl', function($scope) {
+		$scope.increment = function() {
+			$('#ngControlButton').progressIncrement()
+		}
+
+		$scope.setTo = function(value) {
+			$('#ngControlButton').progressSet(value * 100)
+		}
+
+		$scope.finish = function() {
+			$('#ngControlButton').progressFinish()
+		}
+	})
 	.directive('progressButton', function() {
 		return {
 			scope: true,

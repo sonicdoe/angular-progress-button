@@ -13,15 +13,17 @@
 		<a href="#" progress-button ng-click="generate(this)" progress-button-color="red" progress-button-loading="Generating.." progress-button-finished="Download" progress-button-type="background-vertical">Generate</a>
 	</div>
 
-	<h1>Progress Control</h1>
+	<div ng-controller="ProgressControlCtrl">
+		<h1>Progress Control</h1>
 
-	<a id="controlButton" href="#" class="progress-button">Start</a>
+		<a id="ngControlButton" href="#" progress-button ng-click="progressStart()">Start</a>
 
-	<div class="control-area">
-		<a class="command increment">Increment</a>
-		<a class="command set-to-1">Set to 1%</a>
-		<a class="command set-to-50">Set to 50%</a>
-		<a class="command finish">Finish</a>
+		<div class="control-area">
+			<a class="command increment" ng-click="increment()">Increment</a>
+			<a class="command set-to-1" ng-click="setTo(0.01)">Set to 1%</a>
+			<a class="command set-to-50" ng-click="setTo(0.5)">Set to 50%</a>
+			<a class="command finish" ng-click="finish()">Finish</a>
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
