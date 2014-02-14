@@ -1,3 +1,13 @@
+angular.module('progressButtonDemo', [])
+	.controller('ProgressButtonsCtrl', function($scope) {
+
+	})
+	.directive('progressButton', function() {
+		return function(scope, element, attrs) {
+
+		}
+	})
+
 $(document).ready(function(){
 
 	// Convert all the links with the progress-button class to
