@@ -3,11 +3,14 @@ angular.module('progressButtonDemo', [])
 
 	})
 	.directive('progressButton', function() {
-		return function(scope, element, attrs) {
-			element.addClass('progress-button')
+		return {
+			scope: true,
+			link: function(scope, element, attrs) {
+				element.addClass('progress-button')
 
-			scope.progressTimed = function(seconds, cb) {
-				$(element).progressTimed(seconds, cb)
+				scope.progressTimed = function(seconds, cb) {
+					$(element).progressTimed(seconds, cb)
+				}
 			}
 		}
 	})
