@@ -4,6 +4,7 @@ angular.module('progressButtonDemo', [])
 	})
 	.directive('progressButton', function() {
 		return function(scope, element, attrs) {
+			element.addClass('progress-button')
 
 		}
 	})
