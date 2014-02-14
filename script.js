@@ -6,6 +6,9 @@ angular.module('progressButtonDemo', [])
 		return function(scope, element, attrs) {
 			element.addClass('progress-button')
 
+			scope.progressTimed = function(seconds, cb) {
+				$(element).progressTimed(seconds, cb)
+			}
 		}
 	})
 
