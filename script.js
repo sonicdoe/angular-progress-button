@@ -1,6 +1,12 @@
 angular.module('progressButtonDemo', [])
 	.controller('ProgressButtonsCtrl', function($scope) {
-
+		$scope.generate = function(button) {
+			button.progressTimed(3, function() {
+				$scope.generate = function() {
+					alert('Showing how a callback works!');
+				}
+			})
+		}
 	})
 	.directive('progressButton', function() {
 		return {
