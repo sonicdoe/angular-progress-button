@@ -20,6 +20,10 @@ angular.module('progressButtonDemo', [])
 
 				if(attrs.progressButtonColor) element.addClass(attrs.progressButtonColor)
 
+				scope.progressStart = function() {
+					$(element).progressStart()
+				}
+
 				scope.progressTimed = function(seconds, cb) {
 					$(element).progressTimed(seconds, cb)
 				}
