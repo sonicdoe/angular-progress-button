@@ -5,11 +5,13 @@
 	<link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-	<h1>Progress Buttons</h1>
+	<div ng-controller="ProgressButtonsCtrl">
+		<h1>Progress Buttons</h1>
 
-	<a id="submitButton" href="#" class="progress-button">Submit</a>
-	<a id="actionButton" href="#" class="progress-button green" data-loading="Working.." data-finished="Finished!" data-type="background-bar">Action!</a>
-	<a id="generateButton" href="#" class="progress-button red" data-loading="Generating.." data-finished="Download" data-type="background-vertical">Generate</a>
+		<a id="submitButton" href="#" class="progress-button">Submit</a>
+		<a id="actionButton" href="#" class="progress-button green" data-loading="Working.." data-finished="Finished!" data-type="background-bar">Action!</a>
+		<a id="generateButton" href="#" class="progress-button red" data-loading="Generating.." data-finished="Download" data-type="background-vertical">Generate</a>
+	</div>
 
 	<h1>Progress Control</h1>
 
