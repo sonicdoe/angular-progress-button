@@ -58,6 +58,10 @@ div.control-area a:hover {
 	background-image: linear-gradient(top, #51b7e6, #4dafdd);
 }
 
+.progress-button {
+	cursor: pointer;
+}
+
 /* Hide the original text of the button. Then the loading or finished
    text will be shown in the :after element above it. */
 
