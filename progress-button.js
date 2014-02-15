@@ -119,6 +119,12 @@ angular.module('progressButton', [])
 						setProgress(progress)
 					})
 
+					button.on('progress-finish', function() {
+						setTimeout(function() {
+							bar.css('display', 'block')
+						}, 500)
+					})
+
 					function setProgress(percentage) {
 						if(bar.hasClass('background-horizontal') || bar.hasClass('background-bar')) {
 							bar.css('width', (percentage * 100) + '%')
@@ -140,6 +146,9 @@ angular.module('progressButton', [])
 						if(+el.css('opacity') > 0) {
 							(window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
 						} else {
+							el.css('display', 'none')
+							el.css('opacity', 1)
+
 							if(typeof callback === 'function') {
 								callback()
 							}
