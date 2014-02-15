@@ -33,6 +33,8 @@ angular.module('progressButtonDemo', [])
 
 				if(attrs.progressButtonColor) element.addClass(attrs.progressButtonColor)
 
+				$(element).progressInitialize()
+
 				scope.progressStart = function() {
 					$(element).progressStart()
 				}
