@@ -46,13 +46,13 @@
    contents of the data-loading attribute on the butotn */
 
 .progress-button.in-progress:after {
-	content: attr(data-loading);
+	content: attr(data-loading-text);
 }
 
 /* The same goes for the .finished class */
 
 .progress-button.finished:after {
-	content: attr(data-finished);
+	content: attr(data-finished-text);
 }
 
 /* The colorful bar that grows depending on the progress */
