@@ -39,8 +39,8 @@ angular.module('progressButtonDemo', [])
 					$(element).progressStart()
 				}
 
-				scope.progressTimed = function(seconds, cb) {
-					$(element).progressTimed(seconds, cb)
+				scope.progressTimed = function(seconds, callback) {
+					$(element).progressTimed(seconds, callback)
 				}
 			}
 		}
