@@ -9,8 +9,8 @@
 		<h1>Progress Buttons</h1>
 
 		<a progress-button ng-click="progressTimed(2)">Submit</a>
-		<a progress-button ng-click="progressTimed(2)" progress-button-color="green" loading-text="Working.." finished-text="Finished!" progress-type="background-bar">Action!</a>
-		<a progress-button ng-click="generate(this)" progress-button-color="red" loading-text="Generating.." finished-text="Download" progress-type="background-vertical">Generate</a>
+		<a progress-button ng-click="progressTimed(2)" class="green" loading-text="Working.." finished-text="Finished!" progress-type="background-bar">Action!</a>
+		<a progress-button ng-click="generate(this)" class="red" loading-text="Generating.." finished-text="Download" progress-type="background-vertical">Generate</a>
 	</div>
 
 	<div ng-controller="ProgressControlCtrl">
