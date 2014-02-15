@@ -25,6 +25,8 @@ angular.module('progressButtonDemo', [])
 		return {
 			scope: true,
 			link: function(scope, element, attrs) {
+				scope.$parent[attrs.progressButton] = scope
+
 				element.attr('data-type', attrs.progressType)
 				element.attr('data-loading', attrs.loadingText)
 				element.attr('data-finished', attrs.finishedText)
