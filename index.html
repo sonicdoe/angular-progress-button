@@ -8,15 +8,15 @@
 	<div ng-controller="ProgressButtonsCtrl">
 		<h1>Progress Buttons</h1>
 
-		<a href="#" progress-button ng-click="progressTimed(2)">Submit</a>
-		<a href="#" progress-button ng-click="progressTimed(2)" progress-button-color="green" progress-button-loading="Working.." progress-button-finished="Finished!" progress-button-type="background-bar">Action!</a>
-		<a href="#" progress-button ng-click="generate(this)" progress-button-color="red" progress-button-loading="Generating.." progress-button-finished="Download" progress-button-type="background-vertical">Generate</a>
+		<a progress-button ng-click="progressTimed(2)">Submit</a>
+		<a progress-button ng-click="progressTimed(2)" progress-button-color="green" progress-button-loading="Working.." progress-button-finished="Finished!" progress-button-type="background-bar">Action!</a>
+		<a progress-button ng-click="generate(this)" progress-button-color="red" progress-button-loading="Generating.." progress-button-finished="Download" progress-button-type="background-vertical">Generate</a>
 	</div>
 
 	<div ng-controller="ProgressControlCtrl">
 		<h1>Progress Control</h1>
 
-		<a id="ngControlButton" href="#" progress-button ng-click="progressStart()">Start</a>
+		<a id="ngControlButton" progress-button ng-click="progressStart()">Start</a>
 
 		<div class="control-area">
 			<a class="command increment" ng-click="increment()">Increment</a>
