@@ -30,7 +30,7 @@ Include `progress-button.js` and `progress-button.css`.
 ### JavaScript
 
 ```js
-angular.module('progressButtonDemo', [])
+angular.module('progressButtonDemo', ['progressButton'])
 	.controller('ProgressButtonsCtrl', function($scope) {
 		$scope.submit = function(button) {
 			button.progressTimed(1, function() {
