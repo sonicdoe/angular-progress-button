@@ -38,10 +38,14 @@ angular.module('progressButtonDemo', ['progressButton'])
 			}
 		}
 	})
-	.controller('ProgressControlCtrl', function($scope) {
+	.controller('ProgressControlCtrl', function($scope, $timeout) {
 		$scope.controlButton = {}
 
-		$scope.controlButton.progressTimed(3)
+		// $timeout is necessary to wait for the directive’s link method to evaluate.
+		// Otherwise $scope.controlButton will (still) be an empty object.
+		$timeout(function() {
+			$scope.controlButton.progressTimed(3)
+		})
 	}
 ```
 
