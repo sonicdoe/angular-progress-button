@@ -88,6 +88,8 @@ angular.module('progressButton', [])
 					var bar = angular.element(button[0].querySelectorAll('.tz-bar'))
 
 					button.on('progress', function(e) {
+						e = e.originalEvent || e
+
 						if(!button.hasClass('in-progress')) {
 							bar.css('display', '')
 							progress = 0
