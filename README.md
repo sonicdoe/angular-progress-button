@@ -49,33 +49,6 @@ angular.module('progressButtonDemo', ['progressButton'])
 	}
 ```
 
-## API
-
-### progressStart()
-
-Simulates activity. Increments the progress every two seconds if there has been
-no activity.
-
-### progressFinish()
-
-Finishes the progress.
-
-### progressIncrement(value)
-
-Increments the progress by `value` or `0.1` if no value was given.
-
-*Note:* `value` ranges from 0 to 1 (0 % to 100 %).
-
-### progressSet(value)
-
-Sets progress to `value`.
-
-*Note:* `value` ranges from 0 to 1 (0 % to 100 %).
-
-### progressTimed(seconds, callback)
-
-Finishes the progress after `seconds` and optionally calls `callback`.
-
 ## License
 
 `angular-progress-button` is licensed under the BSD 2-clause license. See [LICENSE](./LICENSE) for the full license.
