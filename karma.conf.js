@@ -18,4 +18,12 @@ module.exports = function(config) {
 		browsers: ['PhantomJS'],
 		singleRun: false
 	})
+
+	if(process.env.ANGULARJS_VERSION) {
+		config.files[0] = 'https://ajax.googleapis.com/ajax/libs/angularjs/' +
+			process.env.ANGULARJS_VERSION + '/angular.min.js'
+
+		config.files[1] = 'https://code.angularjs.org/' +
+			process.env.ANGULARJS_VERSION + '/angular-mocks.js'
+	}
 }
