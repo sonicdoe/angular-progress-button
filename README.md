@@ -76,12 +76,13 @@ Sets progress to `value`.
 
 Finishes the progress after `seconds` and optionally calls `callback`.
 
-## Original License
+## License
 
-The original code is from Tutorialzine’s “[Buttons With Built-in Progress Meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)”
-tutorial. [Their license](http://tutorialzine.com/license/) reads as follows:
+`angular-progress-button` is licensed under the BSD 2-clause license. See [LICENSE](./LICENSE) for the full license.
 
 ---
+
+The original design and implementation is from Tutorialzine’s “[Buttons With Built-in Progress Meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)” tutorial. [Their license](http://tutorialzine.com/license/) reads as follows:
 
 > The source code and techniques, covered in our tutorials, are free for use in your personal and commercial projects. The text and images of our articles, however, are copyrighted and may not be used or copied without written permission (this includes translation of the articles in different languages).
 
