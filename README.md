@@ -83,12 +83,12 @@ tutorial. [Their license](http://tutorialzine.com/license/) reads as follows:
 
 ---
 
-The source code and techniques, covered in our tutorials, are free for use in your personal and commercial projects. The text and images of our articles, however, are copyrighted and may not be used or copied without written permission (this includes translation of the articles in different languages).
+> The source code and techniques, covered in our tutorials, are free for use in your personal and commercial projects. The text and images of our articles, however, are copyrighted and may not be used or copied without written permission (this includes translation of the articles in different languages).
 
-You can use, modify and build upon our code for your (or your clients’) personal and commercial projects with no attribution necessary.
+> You can use, modify and build upon our code for your (or your clients’) personal and commercial projects with no attribution necessary.
 
-You are not allowed to redistribute our demo files directly (you are encouraged to share a link to the tutorials instead).
+> You are not allowed to redistribute our demo files directly (you are encouraged to share a link to the tutorials instead).
 
-If you plan to include our source code in site templates or to package it with other forms of digital content, meant for direct selling on online marketplaces (such as ThemeForest, ActiveDen etc.), you are required to include a back-link to the article in question on Tutorialzine.com.
+> If you plan to include our source code in site templates or to package it with other forms of digital content, meant for direct selling on online marketplaces (such as ThemeForest, ActiveDen etc.), you are required to include a back-link to the article in question on Tutorialzine.com.
 
 ---
