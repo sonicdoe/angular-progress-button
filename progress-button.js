@@ -7,7 +7,7 @@ angular.module('progressButton', [])
 
 				scope.progressStart = function() {
 					var button = element
-					
+
 					lastProgress = new Date().getTime()
 
 					if(element.hasClass('in-progress')) {
