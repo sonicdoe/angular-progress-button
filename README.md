@@ -3,8 +3,6 @@
 Brings [buttons with built-in progress meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)
 to AngularJS.
 
-*Work in progress.*
-
 See a demo at [sonichedgehog.github.io/angular-progress-button](http://sonichedgehog.github.io/angular-progress-button).
 
 ## Usage
@@ -15,13 +13,13 @@ Include `progress-button.js` and `progress-button.css`.
 
 ```html
 <!-- Simple button -->
-<a progress-button value="progress">Button</a>
+<progress-button value="progress">Button</a>
 
 <!-- Horizontal type -->
-<a progress-button value="progress" type="horizontal">Button</a>
+<progress-button value="progress" type="horizontal">Button</a>
 
 <!-- Custom in-progress and completion text -->
-<a progress-button value="progress" in-progress="Generating…" complete="Download">Generate</a>
+<progress-button value="progress" in-progress="Generating…" complete="Download">Generate</a>
 ```
 
 ### Attributes
