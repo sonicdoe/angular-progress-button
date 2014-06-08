@@ -15,38 +15,22 @@ Include `progress-button.js` and `progress-button.css`.
 
 ```html
 <!-- Simple button -->
-<a progress-button ng-click="progressTimed(2)">Action!</a>
+<a progress-button value="progress">Button</a>
 
-<!-- Different progress type -->
-<a progress-button ng-click="submit(this)" progress-type="background-bar">Submit</a>
+<!-- Horizontal type -->
+<a progress-button value="progress" type="horizontal">Button</a>
 
-<!-- Custom loading and finished text -->
-<a progress-button ng-click="progressTimed(3)" loading-text="Working.." finished-text="Finished!">Go!</a>
-
-<!-- Assign button to a scope variable to call progressTimed() in the controller -->
-<a progress-button="controlButton">Submit</a>
+<!-- Custom in-progress and completion text -->
+<a progress-button value="progress" in-progress="Generating…" complete="Download">Generate</a>
 ```
 
 ### JavaScript
 
 ```js
 angular.module('progressButtonDemo', ['progressButton'])
-	.controller('ProgressButtonsCtrl', function($scope) {
-		$scope.submit = function(button) {
-			button.progressTimed(1, function() {
-				console.log('Callback fired.')
-			}
-		}
-	})
-	.controller('ProgressControlCtrl', function($scope, $timeout) {
-		$scope.controlButton = {}
-
-		// $timeout is necessary to wait for the directive’s link method to evaluate.
-		// Otherwise $scope.controlButton will (still) be an empty object.
-		$timeout(function() {
-			$scope.controlButton.progressTimed(3)
-		})
-	}
+  .controller('ProgressButtonsCtrl', function($scope) {
+    $scope.progress = 0.5;
+  })
 ```
 
 ## License
