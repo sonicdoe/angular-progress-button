@@ -93,3 +93,5 @@ The original design and implementation is from Tutorialzine’s “[Buttons With
 > If you plan to include our source code in site templates or to package it with other forms of digital content, meant for direct selling on online marketplaces (such as ThemeForest, ActiveDen etc.), you are required to include a back-link to the article in question on Tutorialzine.com.
 
 ---
+
+`angular-progress-button` was originally written for a [bounty on Bountify](https://bountify.co/turn-this-jquery-into-a-angular-directive). The bounty poster has agreed to put the code under an open-source license.
