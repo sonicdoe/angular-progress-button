@@ -24,6 +24,24 @@ Include `progress-button.js` and `progress-button.css`.
 <a progress-button value="progress" in-progress="Generating…" complete="Download">Generate</a>
 ```
 
+### Attributes
+
+#### value (*Number*)
+
+Progress value, must range from `0` (default) to `1.0`.
+
+#### type (*String*)
+
+Style of progress animation, `vertical` (default), `horizontal` or `bottom-bar`.
+
+#### in-progress (*String*)
+
+Text which is shown when `value` is between `0` and `1.0`, defaults to `Loading…`.
+
+#### complete (*String*)
+
+Text which is shown when `value` is `1.0`, defaults to `Complete.`
+
 ### JavaScript
 
 ```js
