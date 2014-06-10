@@ -20,10 +20,10 @@
 		<progress-button ng-click="startSimulation()" value="value">Start</progress-button>
 
 		<div class="control-area">
-			<a class="command" ng-click="value = value + 0.1">Increment</a>
-			<a class="command" ng-click="value = 0.01">Set to 1%</a>
-			<a class="command" ng-click="value = 0.5">Set to 50%</a>
-			<a class="command" ng-click="value = 1.0">Finish</a>
+			<a class="command" ng-click="value = value + 0.1; stopSimulation()">Increment</a>
+			<a class="command" ng-click="value = 0.01; stopSimulation()">Set to 1%</a>
+			<a class="command" ng-click="value = 0.5; stopSimulation()">Set to 50%</a>
+			<a class="command" ng-click="value = 1.0; stopSimulation()">Finish</a>
 		</div>
 	</div>
 
