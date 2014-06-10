@@ -10,7 +10,7 @@ angular.module('progressButton', [])
 				inProgressText: '@inProgress',
 				completionText: '@complete'
 			},
-			template: '<a class="progress-button"><span ng-transclude></span><span class="progress-button-bar progress-button-{{type}}"></span></a>',
+			template: '<a class="progress-button"><span class="progress-button-text" ng-transclude></span><span class="progress-button-bar progress-button-{{type}}"></span></a>',
 			link: function(scope, element, attrs) {
 				var bar = angular.element(element[0].querySelectorAll('.progress-button-bar'))
 
