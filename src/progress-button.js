@@ -26,6 +26,14 @@ angular.module('progressButton', [])
 					} else {
 						bar.css('width', (value * 100) + '%')
 					}
+
+					if(value === 0.0) {
+						buttonText.text(scope.defaultText)
+					} else if(value === 1.0) {
+						buttonText.text(scope.completionText)
+					} else {
+						buttonText.text(scope.inProgressText)
+					}
 				})
 
 				var progressInitialize = function() {
