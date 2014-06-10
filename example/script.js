@@ -31,20 +31,5 @@ angular.module('progressButtonDemo', ['progressButton'])
 			})
 		}
 	})
-	.controller('ProgressControlCtrl', function($scope, $timeout) {
-		$scope.controlButton = {}
-
-		$timeout(function() {
-			$scope.increment = function(value) {
-				$scope.controlButton.progressIncrement(value)
-			}
-
-			$scope.setTo = function(value) {
-				$scope.controlButton.progressSet(value)
-			}
-
-			$scope.finish = function() {
-				$scope.controlButton.progressFinish()
-			}
-		})
+	.controller('ProgressControlCtrl', function($scope) {
 	})
