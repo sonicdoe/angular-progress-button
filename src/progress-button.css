@@ -21,6 +21,11 @@
 	cursor: pointer;
 }
 
+.progress-button-text {
+	z-index: 2;
+	position: relative;
+}
+
 /* The colorful bar that grows depending on the progress */
 
 .progress-button-bar {
