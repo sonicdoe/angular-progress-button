@@ -23,7 +23,7 @@
 
 /* The colorful bar that grows depending on the progress */
 
-.progress-button .tz-bar {
+.progress-button-bar {
 	background-color: #e667c0;
 	height: 3px;
 	bottom: 0;
@@ -41,12 +41,12 @@
 
 /* The bar can be either horizontal, or vertical */
 
-.progress-button .tz-bar.background-horizontal {
+.progress-button-bar.progress-button-horizontal {
 	height: 100%;
 	border-radius: 2px;
 }
 
-.progress-button .tz-bar.background-vertical {
+.progress-button-bar.progress-button-vertical {
 	height: 0;
 	top: 0;
 	width: 100%;
