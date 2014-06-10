@@ -20,6 +20,13 @@ angular.module('progressButton', [])
 				attrs.$observe('inProgress', function(value) { scope.inProgressText = value || 'Loading…' })
 				attrs.$observe('complete', function(value) { scope.completionText = value || 'Complete.' })
 
+				scope.$watch('value()', function(value) {
+					if(scope.type === 'vertical') {
+						bar.css('height', (value * 100) + '%')
+					} else {
+						bar.css('width', (value * 100) + '%')
+					}
+				})
 
 				var progressInitialize = function() {
 					var button = element
