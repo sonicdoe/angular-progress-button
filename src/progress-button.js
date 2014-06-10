@@ -13,6 +13,7 @@ angular.module('progressButton', [])
 			template: '<a class="progress-button"><span class="progress-button-text" ng-transclude></span><span class="progress-button-bar progress-button-{{type}}"></span></a>',
 			link: function(scope, element, attrs) {
 				var bar = angular.element(element[0].querySelectorAll('.progress-button-bar'))
+				var buttonText = angular.element(element[0].querySelectorAll('.progress-button-text'))
 
 
 				var progressInitialize = function() {
