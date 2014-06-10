@@ -21,12 +21,6 @@ angular.module('progressButton', [])
 				attrs.$observe('complete', function(value) { scope.completionText = value || 'Complete.' })
 
 				scope.$watch('value()', function(value) {
-					if(scope.type === 'vertical') {
-						bar.css('height', (value * 100) + '%')
-					} else {
-						bar.css('width', (value * 100) + '%')
-					}
-
 					if(value === 0.0) {
 						buttonText.text(scope.defaultText)
 						bar.css('display', 'none')
@@ -40,6 +34,12 @@ angular.module('progressButton', [])
 					} else {
 						buttonText.text(scope.inProgressText)
 						bar.css('display', 'block')
+					}
+
+					if(scope.type === 'vertical') {
+						bar.css('height', (value * 100) + '%')
+					} else {
+						bar.css('width', (value * 100) + '%')
 					}
 				})
 
