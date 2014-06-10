@@ -22,17 +22,17 @@ angular.module('progressButton', [])
 
 				scope.$watch('value()', function(value) {
 					if(value === 0.0) {
-						buttonText.text(scope.defaultText)
+						buttonText.attr('data-progress-button-text', scope.defaultText)
 						bar.css('display', 'none')
 					} else if(value === 1.0) {
-						buttonText.text(scope.completionText)
+						buttonText.attr('data-progress-button-text', scope.completionText)
 						bar.css('display', 'block')
 
 						$timeout(function() {
 							fadeOut(bar)
 						}, 500)
 					} else {
-						buttonText.text(scope.inProgressText)
+						buttonText.attr('data-progress-button-text', scope.inProgressText)
 						bar.css('display', 'block')
 					}
 
