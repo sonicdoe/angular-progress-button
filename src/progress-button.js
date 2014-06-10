@@ -8,6 +8,7 @@ angular.module('progressButton', [])
 				inProgress: '@',
 				complete: '@'
 			},
+			template: '<a class="progress-button progress-button-{{type}}"></a>',
 			link: function(scope, element, attrs) {
 				scope.$parent[attrs.progressButton] = scope
 
