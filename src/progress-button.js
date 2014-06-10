@@ -1,5 +1,5 @@
 angular.module('progressButton', [])
-	.directive('progressButton', function() {
+	.directive('progressButton', function($timeout) {
 		return {
 			restrict: 'E',
 			transclude: true,
@@ -33,6 +33,10 @@ angular.module('progressButton', [])
 					} else if(value === 1.0) {
 						buttonText.text(scope.completionText)
 						bar.css('display', 'block')
+
+						$timeout(function() {
+							fadeOut(bar)
+						}, 500)
 					} else {
 						buttonText.text(scope.inProgressText)
 						bar.css('display', 'block')
