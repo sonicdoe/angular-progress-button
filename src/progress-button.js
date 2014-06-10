@@ -10,7 +10,7 @@ angular.module('progressButton', [])
 				inProgress: '@',
 				complete: '@'
 			},
-			template: '<a class="progress-button progress-button-{{type}}"><span ng-transclude></span><span class="progress-button-bar"></span></a>',
+			template: '<a class="progress-button"><span ng-transclude></span><span class="progress-button-bar progress-button-{{type}}"></span></a>',
 			link: function(scope, element, attrs) {
 				scope.$parent[attrs.progressButton] = scope
 
