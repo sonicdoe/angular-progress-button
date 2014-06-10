@@ -2,7 +2,12 @@ angular.module('progressButton', [])
 	.directive('progressButton', function() {
 		return {
 			restrict: 'E',
-			scope: true,
+			scope: {
+				value: '&',
+				type: '@',
+				inProgress: '@',
+				complete: '@'
+			},
 			link: function(scope, element, attrs) {
 				scope.$parent[attrs.progressButton] = scope
 
