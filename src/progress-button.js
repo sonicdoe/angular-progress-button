@@ -2,13 +2,14 @@ angular.module('progressButton', [])
 	.directive('progressButton', function() {
 		return {
 			restrict: 'E',
+			transclude: true,
 			scope: {
 				value: '&',
 				type: '@',
 				inProgress: '@',
 				complete: '@'
 			},
-			template: '<a class="progress-button progress-button-{{type}}"></a>',
+			template: '<a class="progress-button progress-button-{{type}}" ng-transclude></a>',
 			link: function(scope, element, attrs) {
 				scope.$parent[attrs.progressButton] = scope
 
