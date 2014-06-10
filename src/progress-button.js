@@ -7,8 +7,8 @@ angular.module('progressButton', [])
 			scope: {
 				value: '&',
 				type: '@',
-				inProgress: '@',
-				complete: '@'
+				inProgressText: '@inProgress',
+				completionText: '@complete'
 			},
 			template: '<a class="progress-button"><span ng-transclude></span><span class="progress-button-bar progress-button-{{type}}"></span></a>',
 			link: function(scope, element, attrs) {
