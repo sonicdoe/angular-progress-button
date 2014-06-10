@@ -1,6 +1,7 @@
 angular.module('progressButton', [])
 	.directive('progressButton', function() {
 		return {
+			restrict: 'E',
 			scope: true,
 			link: function(scope, element, attrs) {
 				scope.$parent[attrs.progressButton] = scope
