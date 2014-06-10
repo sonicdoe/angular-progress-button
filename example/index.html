@@ -9,9 +9,9 @@
 	<div ng-controller="ProgressButtonsCtrl">
 		<h1>Progress Buttons</h1>
 
-		<a progress-button ng-click="progressTimed(2)">Submit</a>
-		<a progress-button ng-click="progressTimed(2)" class="green" loading-text="Working.." finished-text="Finished!" progress-type="background-bar">Action!</a>
-		<a progress-button ng-click="generate(this)" class="red" loading-text="Generating.." finished-text="Download" progress-type="background-vertical">Generate</a>
+		<progress-button ng-click="simulateProgress(0, 2)" value="buttons[0].value">Submit</progress-button>
+		<progress-button ng-click="simulateProgress(1, 3)" value="buttons[1].value" class="green" in-progress="Working…" complete="Finished!" type="bottom-bar">Action!</progress-button>
+		<progress-button ng-click="simulateProgress(2, 2.5)" value="buttons[2].value" class="red" in-progress="Generating…" complete="Download" type="vertical">Generate</progress-button>
 	</div>
 
 	<div ng-controller="ProgressControlCtrl">

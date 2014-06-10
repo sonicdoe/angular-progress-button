@@ -1,5 +1,11 @@
 angular.module('progressButtonDemo', ['progressButton'])
 	.controller('ProgressButtonsCtrl', function($scope, $interval) {
+		$scope.buttons = [
+			{ value: 0.0 },
+			{ value: 0.0 },
+			{ value: 0.0 }
+		]
+
 		$scope.simulateProgress = function(buttonIndex, seconds, callback) {
 			if($scope.buttons[buttonIndex].simulating) return
 
