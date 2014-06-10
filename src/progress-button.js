@@ -23,9 +23,11 @@ angular.module('progressButton', [])
 				scope.$watch('value()', function(value) {
 					if(value === 0.0) {
 						buttonText.attr('data-progress-button-text', scope.defaultText)
+						buttonText.addClass('force-refresh').removeClass('force-refresh')
 						bar.css('display', 'none')
 					} else if(value === 1.0) {
 						buttonText.attr('data-progress-button-text', scope.completionText)
+						buttonText.addClass('force-refresh').removeClass('force-refresh')
 						bar.css('display', 'block')
 
 						$timeout(function() {
@@ -33,6 +35,7 @@ angular.module('progressButton', [])
 						}, 500)
 					} else {
 						buttonText.attr('data-progress-button-text', scope.inProgressText)
+						buttonText.addClass('force-refresh').removeClass('force-refresh')
 						bar.css('display', 'block')
 					}
 
