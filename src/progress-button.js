@@ -36,11 +36,16 @@ angular.module('progressButton', [])
 						bar.css('display', 'block')
 					}
 
-					if(scope.type === 'vertical') {
-						bar.css('height', (value * 100) + '%')
-					} else {
-						bar.css('width', (value * 100) + '%')
-					}
+					// Allow ‘display: block’ above to be applied before setting the
+					// bar’s width/height. This allows the CSS transition to happen if
+					// the original value was zero.
+					$timeout(function() {
+						if(scope.type === 'vertical') {
+							bar.css('height', (value * 100) + '%')
+						} else {
+							bar.css('width', (value * 100) + '%')
+						}
+					})
 				})
 
 				var fadeOut = function(el, callback) {
