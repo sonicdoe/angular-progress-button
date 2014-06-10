@@ -21,6 +21,8 @@ angular.module('progressButton', [])
 				attrs.$observe('complete', function(value) { scope.completionText = value || 'Complete.' })
 
 				scope.$watch('value()', function(value) {
+					if(!value) value = 0
+
 					if(value === 0.0) {
 						buttonText.attr('data-progress-button-text', scope.defaultText)
 						buttonText.addClass('force-refresh').removeClass('force-refresh')
