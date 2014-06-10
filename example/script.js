@@ -31,5 +31,25 @@ angular.module('progressButtonDemo', ['progressButton'])
 			})
 		}
 	})
-	.controller('ProgressControlCtrl', function($scope) {
+	.controller('ProgressControlCtrl', function($scope, $interval) {
+		$scope.startSimulation = function() {
+			// Only allow one simulation at a time
+			if($scope.interval) return
+
+			var tick = function() {
+				if(!$scope.value) $scope.value = 0
+
+				$scope.value = ((($scope.value * 100) + 10) / 100)
+
+				if($scope.value >= 1.0) $scope.stopSimulation()
+			}
+
+			tick()
+			$scope.interval = $interval(tick, 1000)
+		}
+
+		$scope.stopSimulation = function() {
+			$interval.cancel($scope.interval)
+			$scope.interval = undefined
+		}
 	})
