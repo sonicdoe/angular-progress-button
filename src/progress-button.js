@@ -22,6 +22,7 @@ angular.module('progressButton', [])
 
 				scope.$watch('value()', function(value) {
 					if(!value) value = 0
+					if(value > 1.0) value = 1.0
 
 					if(value === 0.0) {
 						buttonText.attr('data-progress-button-text', scope.defaultText)
