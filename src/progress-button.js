@@ -16,6 +16,10 @@ angular.module('progressButton', [])
 				var buttonText = angular.element(element[0].querySelectorAll('.progress-button-text'))
 
 				scope.defaultText = buttonText.text()
+				attrs.$observe('type', function(value) { scope.type = value || 'horizontal' })
+				attrs.$observe('inProgress', function(value) { scope.inProgressText = value || 'Loading…' })
+				attrs.$observe('complete', function(value) { scope.completionText = value || 'Complete.' })
+
 
 				var progressInitialize = function() {
 					var button = element
