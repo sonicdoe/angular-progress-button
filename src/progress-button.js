@@ -66,17 +66,6 @@ angular.module('progressButton', [])
 
 					tick()
 				}
-
-				var emitEvent = function(el, eventName, data) {
-					if(window.CustomEvent) {
-						var event = new CustomEvent(eventName, { detail: data })
-					} else {
-						var event = document.createEvent('CustomEvent')
-						event.initCustomEvent(eventName, true, true, { detail: data })
-					}
-
-					el[0].dispatchEvent(event)
-				}
 			}
 		}
 	})
