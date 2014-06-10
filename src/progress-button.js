@@ -10,7 +10,7 @@ angular.module('progressButton', [])
 				inProgress: '@',
 				complete: '@'
 			},
-			template: '<a class="progress-button progress-button-{{type}}" ng-transclude></a>',
+			template: '<a class="progress-button progress-button-{{type}}"><span ng-transclude></span><span class="progress-button-bar"></span></a>',
 			link: function(scope, element, attrs) {
 				scope.$parent[attrs.progressButton] = scope
 
@@ -82,9 +82,6 @@ angular.module('progressButton', [])
 				var progressInitialize = function() {
 					var button = element
 					var progress = 0
-
-					button.append(angular.element('<span class="tz-bar ' + attrs.progressType + '">'))
-					var bar = angular.element(button[0].querySelectorAll('.tz-bar'))
 
 					button.on('progress', function(e) {
 						e = e.originalEvent || e
