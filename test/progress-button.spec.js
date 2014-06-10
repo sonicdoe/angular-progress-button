@@ -17,4 +17,44 @@ describe('progress-button directive', function() {
 			$rootScope.$digest()
 		})
 	}
+
+	it('shows the button’s inner text if progress = 0', function() {
+		compileDirective('<progress-button value="progress">Button</progress-button>')
+
+		scope.progress = 0
+
+		expect(element.text()).toBe('Button')
+	})
+
+	it('shows the default in-progress text if progress = 0.5', function() {
+		compileDirective('<progress-button value="progress">Button</progress-button>')
+
+		scope.progress = 0.5
+
+		expect(element.text()).toBe('Loading…')
+	})
+
+	it('shows the default completion text if progress = 1.0', function() {
+		compileDirective('<progress-button value="progress">Button</progress-button>')
+
+		scope.progress = 1.0
+
+		expect(element.text()).toBe('Complete.')
+	})
+
+	it('shows the specified in-progress text if applicable', function() {
+		compileDirective('<progress-button value="progress" in-progress="Text">Button</progress-button>')
+
+		scope.progress = 0.5
+
+		expect(element.text()).toBe('Text')
+	})
+
+	it('shows the specified completion text if applicable', function() {
+		compileDirective('<progress-button value="progress" completion="Text">Button</progress-button>')
+
+		scope.progress = 1.0
+
+		expect(element.text()).toBe('Text')
+	})
 })
