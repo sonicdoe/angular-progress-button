@@ -3,6 +3,7 @@ angular.module('progressButton', [])
 		return {
 			restrict: 'E',
 			transclude: true,
+			replace: true,
 			scope: {
 				value: '&',
 				type: '@',
