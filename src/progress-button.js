@@ -83,14 +83,6 @@ angular.module('progressButton', [])
 					var button = element
 					var progress = 0
 
-					attrs.progressType = attrs.progressType || 'background-horizontal'
-					attrs.loadingText = attrs.loadingText || 'Loading..'
-					attrs.finishedText = attrs.finishedText || 'Done!'
-
-					button.attr('data-progress-type', attrs.progressType)
-					button.attr('data-loading-text', attrs.loadingText)
-					button.attr('data-finished-text', attrs.finishedText)
-
 					button.append(angular.element('<span class="tz-bar ' + attrs.progressType + '">'))
 					var bar = angular.element(button[0].querySelectorAll('.tz-bar'))
 
