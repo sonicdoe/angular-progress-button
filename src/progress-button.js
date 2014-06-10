@@ -83,8 +83,6 @@ angular.module('progressButton', [])
 					var button = element
 					var progress = 0
 
-					button.addClass('progress-button')
-
 					attrs.progressType = attrs.progressType || 'background-horizontal'
 					attrs.loadingText = attrs.loadingText || 'Loading..'
 					attrs.finishedText = attrs.finishedText || 'Done!'
