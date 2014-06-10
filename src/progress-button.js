@@ -29,10 +29,13 @@ angular.module('progressButton', [])
 
 					if(value === 0.0) {
 						buttonText.text(scope.defaultText)
+						bar.css('display', 'none')
 					} else if(value === 1.0) {
 						buttonText.text(scope.completionText)
+						bar.css('display', 'block')
 					} else {
 						buttonText.text(scope.inProgressText)
+						bar.css('display', 'block')
 					}
 				})
 
