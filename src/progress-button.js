@@ -43,59 +43,6 @@ angular.module('progressButton', [])
 					}
 				})
 
-				var progressInitialize = function() {
-					var button = element
-					var progress = 0
-
-					button.on('progress', function(e) {
-						e = e.originalEvent || e
-
-						if(!button.hasClass('in-progress')) {
-							bar.css('display', '')
-							progress = 0
-							button.removeClass('finished').addClass('in-progress')
-						}
-
-						if(e.detail.absolute) {
-							progress = e.detail.value
-						} else {
-							progress += e.detail.value
-						}
-
-						if(progress >= 1) {
-							progress = 1
-						}
-
-						if(e.detail.finish) {
-							button.removeClass('in-progress').addClass('finished')
-
-							setTimeout(function() {
-								fadeOut(bar, function() {
-									emitEvent(button, 'progress-finish')
-									setProgress(0)
-								})
-
-							}, 500)
-						}
-
-						setProgress(progress)
-					})
-
-					button.on('progress-finish', function() {
-						setTimeout(function() {
-							bar.css('display', 'block')
-						}, 500)
-					})
-
-					function setProgress(percentage) {
-						if(bar.hasClass('background-horizontal') || bar.hasClass('background-bar')) {
-							bar.css('width', (percentage * 100) + '%')
-						} else if(bar.hasClass('background-vertical')) {
-							bar.css('height', (percentage * 100) + '%')
-						}
-					}
-				}
-
 				var fadeOut = function(el, callback) {
 					el.css('opacity', 1)
 
@@ -130,8 +77,6 @@ angular.module('progressButton', [])
 
 					el[0].dispatchEvent(event)
 				}
-
-				progressInitialize()
 			}
 		}
 	})
