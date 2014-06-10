@@ -67,3 +67,30 @@
 	width: 100%;
 	border-radius: 2px;
 }
+
+/*
+ * Custom color themes for the example page
+ */
+
+.progress-button.red {
+	background-color: #e6537d;
+	background-image: -webkit-linear-gradient(top, #e6537d, #df5179);
+	background-image: -moz-linear-gradient(top, #e6537d, #df5179);
+	background-image: linear-gradient(top, #e6537d, #df5179);
+}
+
+.progress-button.red .progress-button-bar {
+	background-color: #6876b4;
+}
+
+
+.progress-button.green {
+	background-color: #64c896;
+	background-image: -webkit-linear-gradient(top, #64c896, #5fbd8e);
+	background-image: -moz-linear-gradient(top, #64c896, #5fbd8e);
+	background-image: linear-gradient(top, #64c896, #5fbd8e);
+}
+
+.progress-button.green .progress-button-bar {
+	background-color: #9e81d6;
+}
