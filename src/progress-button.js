@@ -15,6 +15,7 @@ angular.module('progressButton', [])
 				var bar = angular.element(element[0].querySelectorAll('.progress-button-bar'))
 				var buttonText = angular.element(element[0].querySelectorAll('.progress-button-text'))
 
+				scope.defaultText = buttonText.text()
 
 				var progressInitialize = function() {
 					var button = element
