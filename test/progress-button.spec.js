@@ -33,6 +33,7 @@ describe('progress-button directive', function() {
 		compileDirective('<progress-button value="progress">Button</progress-button>')
 
 		scope.progress = 0.5
+		scope.$apply()
 
 		expect(element.text()).toBe('Loading…')
 	})
@@ -41,6 +42,7 @@ describe('progress-button directive', function() {
 		compileDirective('<progress-button value="progress">Button</progress-button>')
 
 		scope.progress = 1.0
+		scope.$apply()
 
 		expect(element.text()).toBe('Complete.')
 	})
@@ -49,6 +51,7 @@ describe('progress-button directive', function() {
 		compileDirective('<progress-button value="progress" in-progress="Text">Button</progress-button>')
 
 		scope.progress = 0.5
+		scope.$apply()
 
 		expect(element.text()).toBe('Text')
 	})
@@ -57,6 +60,7 @@ describe('progress-button directive', function() {
 		compileDirective('<progress-button value="progress" complete="Text">Button</progress-button>')
 
 		scope.progress = 1.0
+		scope.$apply()
 
 		expect(element.text()).toBe('Text')
 	})
