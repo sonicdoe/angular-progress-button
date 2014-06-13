@@ -1,5 +1,5 @@
 describe('progress-button directive', function() {
-	var element, scope
+	var element, scope, barElement, buttonTextElement
 
 	beforeEach(function() {
 		module('progressButton')
@@ -15,6 +15,9 @@ describe('progress-button directive', function() {
 		inject(function($rootScope, $compile) {
 			$compile(element)(scope)
 			$rootScope.$digest()
+
+			barElement = angular.element(element[0].querySelectorAll('.progress-button-bar'))
+			buttonTextElement = angular.element(element[0].querySelectorAll('.progress-button-text'))
 		})
 	}
 
