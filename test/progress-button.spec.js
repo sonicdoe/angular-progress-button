@@ -54,7 +54,7 @@ describe('progress-button directive', function() {
 	})
 
 	it('shows the specified completion text if applicable', function() {
-		compileDirective('<progress-button value="progress" completion="Text">Button</progress-button>')
+		compileDirective('<progress-button value="progress" complete="Text">Button</progress-button>')
 
 		scope.progress = 1.0
 
