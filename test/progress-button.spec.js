@@ -86,4 +86,15 @@ describe('progress-button directive', function() {
 
 		expect(barElement.css('height')).toBe('50%')
 	})
+
+	it('sets the bar’s width to 0% if progress < 0', function() {
+		compileDirective('<progress-button value="progress">Button</progress-button>')
+
+		scope.progress = -1.0
+		scope.$apply()
+
+		inject(function($timeout) { $timeout.flush() })
+
+		expect(barElement.css('width')).toBe('0%')
+	})
 })
