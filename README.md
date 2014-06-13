@@ -30,7 +30,7 @@ Progress value, must range from `0` (default) to `1.0`.
 
 #### type (*String*)
 
-Style of progress animation, `vertical` (default), `horizontal` or `bottom-bar`.
+Style of progress animation, `horizontal` (default), `vertical` or `bottom-bar`.
 
 #### in-progress (*String*)
 
