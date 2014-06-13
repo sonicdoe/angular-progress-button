@@ -64,4 +64,26 @@ describe('progress-button directive', function() {
 
 		expect(buttonTextElement.attr('data-progress-button-text')).toBe('Text')
 	})
+
+	it('sets the bar’s width to 50% if progress = 0.5', function() {
+		compileDirective('<progress-button value="progress">Button</progress-button>')
+
+		scope.progress = 0.5
+		scope.$apply()
+
+		inject(function($timeout) { $timeout.flush() })
+
+		expect(barElement.css('width')).toBe('50%')
+	})
+
+	it('sets the bar’s height to 50% if progress = 0.5 and type = vertical', function() {
+		compileDirective('<progress-button value="progress" type="vertical">Button</progress-button>')
+
+		scope.progress = 0.5
+		scope.$apply()
+
+		inject(function($timeout) { $timeout.flush() })
+
+		expect(barElement.css('height')).toBe('50%')
+	})
 })
