@@ -7,7 +7,7 @@ See a demo at [sonichedgehog.github.io/angular-progress-button](http://sonichedg
 
 ## Usage
 
-Include `progress-button.js` and `progress-button.css`.
+Include `progress-button.js` and `progress-button.css` from `src`.
 
 ### HTML
 
