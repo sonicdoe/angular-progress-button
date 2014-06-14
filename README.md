@@ -1,9 +1,7 @@
 # angular-progress-button
 
 Brings [buttons with built-in progress meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)
-to AngularJS.
-
-See a demo at [sonichedgehog.github.io/angular-progress-button](http://sonichedgehog.github.io/angular-progress-button).
+to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/angular-progress-button/example).
 
 ## Usage
 
