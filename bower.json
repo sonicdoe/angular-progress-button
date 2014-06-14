@@ -22,7 +22,9 @@
 		"node_modules",
 		"/tmp/",
 		"bower_components",
-		"test"
+		"test",
+		"/karma.conf.js",
+		"/package.json"
 	],
 	"repository": {
 		"type": "git",
