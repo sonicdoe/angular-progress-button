@@ -47,6 +47,20 @@ angular.module('progressButtonDemo', ['progressButton'])
   })
 ```
 
+## Running tests
+
+Install all dependencies using:
+
+```shell
+$ npm install
+```
+
+Run the [Karma test runner](http://karma-runner.github.io):
+
+```shell
+$ ./node_modules/karma/bin/karma start
+```
+
 ## License
 
 `angular-progress-button` is licensed under the BSD 2-clause license. See [LICENSE](./LICENSE) for the full license.
