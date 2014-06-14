@@ -1,3 +1,6 @@
+execSync = require('execSync')
+fs = require('fs')
+
 module.exports = function(config) {
 	config.set({
 		basePath: '',
@@ -26,4 +29,12 @@ module.exports = function(config) {
 		config.files[1] = 'https://code.angularjs.org/' +
 			process.env.ANGULARJS_VERSION + '/angular-mocks.js'
 	}
+
+	execSync.run('mkdir -p tmp')
+	
+	if(!fs.existsSync('tmp/angular-mocks.js')) {
+		execSync.run('curl ' + config.files[1] + ' -o tmp/angular-mocks.js')
+	}
+	
+	config.files[1] = 'tmp/angular-mocks.js'
 }
