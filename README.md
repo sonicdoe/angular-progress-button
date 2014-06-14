@@ -5,7 +5,15 @@ to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/a
 
 ## Usage
 
-Include `progress-button.js` and `progress-button.css` from `src`.
+### Installing
+
+Download `progress-button.js` and `progress-button.css` from the `src` directory or install using [Bower](http://bower.io):
+
+```shell
+$ bower install angular-progress-button
+```
+
+Then include both files.
 
 ### HTML
 
