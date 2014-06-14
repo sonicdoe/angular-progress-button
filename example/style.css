@@ -1,0 +1,62 @@
+body {
+	font: 15px sans-serif;
+	color: #5e5b64;
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+	color: #5e5b64;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+div.control-area {
+	font: bold 14px sans-serif;
+	margin: 40px auto 0;
+	background-color: #f3f3f3;
+	padding: 20px;
+	border-radius: 5px;
+	width: 400px;
+	color: #888;
+}
+
+div.control-area a {
+	display: inline-block;
+	cursor: pointer;
+	margin: 7px auto;
+	background-color: #fdfdfd;
+	border-radius: 2px;
+	padding: 8px 10px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+div.control-area a:hover {
+	background-color: #fff;
+	box-shadow: 0 1px 1px #dfdfdf;
+}
+
+.progress-button.red {
+	background-color: #e6537d;
+	background-image: -webkit-linear-gradient(top, #e6537d, #df5179);
+	background-image: -moz-linear-gradient(top, #e6537d, #df5179);
+	background-image: linear-gradient(top, #e6537d, #df5179);
+}
+
+.progress-button.red .tz-bar{
+	background-color: #6876b4;
+}
+
+.progress-button.green{
+	background-color: #64c896;
+	background-image: -webkit-linear-gradient(top, #64c896, #5fbd8e);
+	background-image: -moz-linear-gradient(top, #64c896, #5fbd8e);
+	background-image: linear-gradient(top, #64c896, #5fbd8e);
+}
+
+.progress-button.green .tz-bar{
+	background-color: #9e81d6;
+}
