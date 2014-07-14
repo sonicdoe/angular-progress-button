@@ -34,5 +34,5 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('build', ['cssmin', 'uglify'])
 	grunt.registerTask('test', ['karma'])
-	grunt.registerTask('default', [])
+	grunt.registerTask('default', ['build'])
 }
