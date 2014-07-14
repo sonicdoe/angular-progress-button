@@ -2,7 +2,8 @@
 	"devDependencies": {
 		"karma": "0.12.x",
 		"karma-jasmine": "0.1.5",
-		"karma-phantomjs-launcher": "0.1.4"
+		"karma-phantomjs-launcher": "0.1.4",
+		"karma-sauce-launcher": "0.2.x"
 	},
 	"scripts": {
 		"test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
