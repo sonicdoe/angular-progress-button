@@ -70,4 +70,14 @@ module.exports = function(config) {
 		config.files[1] = 'https://ajax.googleapis.com/ajax/libs/angularjs/' +
 			process.env.ANGULARJS_VERSION + '/angular-mocks.js'
 	}
+
+	if(process.env.TRAVIS) {
+		var buildLabel = 'Travis Build #' +
+			process.env.TRAVIS_BUILD_NUMBER + ' (' + process.env.TRAVIS_BUILD_ID + ')'
+
+		config.captureTimeout = 0
+		config.sauceLabs.build = buildLabel
+		config.sauceLabs.startConnect = false
+		config.sauceLabs.tunnelIdentifier = process.env.TRAVIS_JOB_NUMBER
+	}
 }
