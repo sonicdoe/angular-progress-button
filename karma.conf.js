@@ -1,4 +1,3 @@
-execSync = require('execSync')
 fs = require('fs')
 
 module.exports = function(config) {
