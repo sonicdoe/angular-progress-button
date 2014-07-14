@@ -21,6 +21,45 @@ module.exports = function(config) {
 		singleRun: false,
 		sauceLabs: {
 			testName: 'angular-progress-button'
+		},
+		customLaunchers: {
+			SLChrome: {
+				base: 'SauceLabs',
+				browserName: 'chrome',
+				platform: 'Linux'
+			},
+			SLFirefox: {
+				base: 'SauceLabs',
+				browserName: 'firefox',
+				platform: 'Linux'
+			},
+			SLSafari: {
+				base: 'SauceLabs',
+				browserName: 'safari',
+				platform: 'OS X 10.9'
+			},
+			SLIE9: {
+				base: 'SauceLabs',
+				browserName: 'internet explorer',
+				platform: 'Windows 7',
+				version: '9'
+			},
+			SLIE: {
+				base: 'SauceLabs',
+				browserName: 'internet explorer',
+				platform: 'Windows 8.1'
+			},
+			SLiPhone: {
+				base: 'SauceLabs',
+				browserName: 'iphone',
+				platform: 'OS X 10.9',
+				version: '7.1'
+			},
+			SLAndroid: {
+				base: 'SauceLabs',
+				browserName: 'android',
+				platform: 'Linux'
+			}
 		}
 	})
 
