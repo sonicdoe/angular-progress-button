@@ -12,13 +12,16 @@ module.exports = function(config) {
 		],
 		exclude: [],
 		preprocessors: {},
-		reporters: ['progress'],
+		reporters: ['progress', 'saucelabs'],
 		port: 9876,
 		colors: true,
 		logLevel: config.LOG_INFO,
 		autoWatch: true,
 		browsers: [],
-		singleRun: false
+		singleRun: false,
+		sauceLabs: {
+			testName: 'angular-progress-button'
+		}
 	})
 
 	if(process.env.ANGULARJS_VERSION) {
