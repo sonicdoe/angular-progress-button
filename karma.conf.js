@@ -19,6 +19,8 @@ module.exports = function(config) {
 		autoWatch: true,
 		browsers: [],
 		singleRun: false,
+		browserNoActivityTimeout: (60 * 1000),
+		captureTimeout: (5 * 60 * 1000),
 		sauceLabs: {
 			testName: 'angular-progress-button'
 		},
