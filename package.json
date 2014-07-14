@@ -1,6 +1,7 @@
 {
 	"devDependencies": {
 		"grunt": "0.4.x",
+		"grunt-contrib-uglify": "0.5.x",
 		"grunt-karma": "0.8.x",
 		"karma": "0.12.x",
 		"karma-jasmine": "0.1.5",
