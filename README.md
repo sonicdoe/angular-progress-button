@@ -9,7 +9,7 @@ to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/a
 
 ### Installing
 
-Download `progress-button.js` and `progress-button.css` from the `src` directory or install using [Bower](http://bower.io):
+Download `progress-button.min.js` and `progress-button.min.css` from the `dist` directory or install using [Bower](http://bower.io):
 
 ```shell
 $ bower install angular-progress-button
