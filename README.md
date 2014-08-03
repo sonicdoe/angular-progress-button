@@ -2,6 +2,8 @@
 
 [![Build Status](http://img.shields.io/travis/SonicHedgehog/angular-progress-button/develop.svg)](https://travis-ci.org/SonicHedgehog/angular-progress-button)
 
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/angular-prog-btn.svg)](https://saucelabs.com/u/angular-prog-btn)
+
 Brings [buttons with built-in progress meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)
 to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/angular-progress-button/example).
 
