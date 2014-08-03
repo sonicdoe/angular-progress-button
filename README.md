@@ -1,5 +1,7 @@
 # angular-progress-button
 
+[![Build Status](http://img.shields.io/travis/SonicHedgehog/angular-progress-button/develop.svg)](https://travis-ci.org/SonicHedgehog/angular-progress-button)
+
 Brings [buttons with built-in progress meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)
 to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/angular-progress-button/example).
 
@@ -7,7 +9,7 @@ to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/a
 
 ### Installing
 
-Download `progress-button.js` and `progress-button.css` from the `src` directory or install using [Bower](http://bower.io):
+Download `progress-button.min.js` and `progress-button.min.css` from the `dist` directory or install using [Bower](http://bower.io):
 
 ```shell
 $ bower install angular-progress-button
@@ -69,8 +71,11 @@ Run the [Karma test runner](http://karma-runner.github.io):
 $ ./node_modules/karma/bin/karma start
 ```
 
+You can also execute a single run in PhantomJS using `grunt test`.
+
 ## Release History
 
+- v0.1.1 (2014-08-03): Add minified version (see `dist/`)
 - v0.1.0 (2014-06-14): Initial release
 
 ## License

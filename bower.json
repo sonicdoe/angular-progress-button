@@ -1,6 +1,6 @@
 {
 	"name": "angular-progress-button",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"homepage": "https://github.com/SonicHedgehog/angular-progress-button",
 	"authors": [
 		"Jakob Krigovsky <jakob.krigovsky@gmail.com>"
@@ -22,7 +22,9 @@
 		"node_modules",
 		"/tmp/",
 		"bower_components",
-		"test"
+		"test",
+		"/karma.conf.js",
+		"/package.json"
 	],
 	"repository": {
 		"type": "git",
