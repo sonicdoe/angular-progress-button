@@ -17,12 +17,18 @@ module.exports = function(grunt) {
 				dest: 'dist/progress-button.min.css'
 			}
 		},
+		ngAnnotate: {
+			build: {
+				src: 'src/progress-button.js',
+				dest: 'dist/progress-button.min.js'
+			}
+		},
 		uglify: {
 			options: {
 				banner: '/* <%= bowerPkg.name %> v<%= bowerPkg.version %> (<%= bowerPkg.homepage %>) */\n'
 			},
 			build: {
-				src: 'src/progress-button.js',
+				src: 'dist/progress-button.min.js',
 				dest: 'dist/progress-button.min.js'
 			}
 		}
@@ -31,8 +37,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify')
 	grunt.loadNpmTasks('grunt-karma')
+	grunt.loadNpmTasks('grunt-ng-annotate')
 
-	grunt.registerTask('build', ['cssmin', 'uglify'])
+	grunt.registerTask('build', ['cssmin', 'ngAnnotate', 'uglify'])
 	grunt.registerTask('test', ['karma'])
 	grunt.registerTask('default', ['build'])
 }
