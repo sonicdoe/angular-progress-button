@@ -75,6 +75,7 @@ You can also execute a single run in PhantomJS using `grunt test`.
 
 ## Release History
 
+- v0.1.1 (2014-08-03): Add minified version (see `dist/`)
 - v0.1.0 (2014-06-14): Initial release
 
 ## License
