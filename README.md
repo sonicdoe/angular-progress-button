@@ -71,6 +71,8 @@ Run the [Karma test runner](http://karma-runner.github.io):
 $ ./node_modules/karma/bin/karma start
 ```
 
+You can also execute a single run in PhantomJS using `grunt test`.
+
 ## Release History
 
 - v0.1.0 (2014-06-14): Initial release
