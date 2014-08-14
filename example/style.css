@@ -46,7 +46,7 @@ div.control-area a:hover {
 	background-image: linear-gradient(top, #e6537d, #df5179);
 }
 
-.progress-button.red .tz-bar{
+.progress-button.red .progress-button-bar{
 	background-color: #6876b4;
 }
 
@@ -57,6 +57,6 @@ div.control-area a:hover {
 	background-image: linear-gradient(top, #64c896, #5fbd8e);
 }
 
-.progress-button.green .tz-bar{
+.progress-button.green .progress-button-bar{
 	background-color: #9e81d6;
 }
