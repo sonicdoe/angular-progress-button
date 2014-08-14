@@ -42,7 +42,6 @@ div.control-area a:hover {
 .progress-button.red {
 	background-color: #e6537d;
 	background-image: -webkit-linear-gradient(top, #e6537d, #df5179);
-	background-image: -moz-linear-gradient(top, #e6537d, #df5179);
 	background-image: linear-gradient(top, #e6537d, #df5179);
 }
 
@@ -53,7 +52,6 @@ div.control-area a:hover {
 .progress-button.green{
 	background-color: #64c896;
 	background-image: -webkit-linear-gradient(top, #64c896, #5fbd8e);
-	background-image: -moz-linear-gradient(top, #64c896, #5fbd8e);
 	background-image: linear-gradient(top, #64c896, #5fbd8e);
 }
 
