@@ -7,6 +7,7 @@
 	line-height: 1;
 	overflow: hidden;
 	position: relative;
+	cursor: pointer;
 
 	box-shadow: 0 1px 1px #ccc;
 	border-radius: 2px;
@@ -15,10 +16,6 @@
 	background-image: -webkit-linear-gradient(top, #51b7e6, #4dafdd);
 	background-image: -moz-linear-gradient(top, #51b7e6, #4dafdd);
 	background-image: linear-gradient(top, #51b7e6, #4dafdd);
-}
-
-.progress-button {
-	cursor: pointer;
 }
 
 .progress-button-text {
