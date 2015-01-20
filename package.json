@@ -6,7 +6,7 @@
 		"grunt-karma": "0.8.x",
 		"grunt-ng-annotate": "0.3.x",
 		"karma": "0.12.x",
-		"karma-jasmine": "0.1.5",
+		"karma-jasmine": "0.3.x",
 		"karma-phantomjs-launcher": "0.1.4"
 	},
 	"scripts": {
