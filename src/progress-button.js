@@ -76,4 +76,4 @@ angular.module('progressButton', [])
 				}
 			}
 		}
-	})
+	});
