@@ -25,20 +25,17 @@ angular.module('progressButton', [])
 					if(value > 1.0) value = 1.0
 
 					if(value === 0.0) {
-						buttonText.attr('data-progress-button-text', scope.defaultText)
-						buttonText.addClass('force-refresh').removeClass('force-refresh')
+						buttonText.text(scope.defaultText)
 						bar.css('display', 'none')
 					} else if(value === 1.0) {
-						buttonText.attr('data-progress-button-text', scope.completionText)
-						buttonText.addClass('force-refresh').removeClass('force-refresh')
+						buttonText.text(scope.completionText)
 						bar.css('display', 'block')
 
 						$timeout(function() {
 							fadeOut(bar)
 						}, 500)
 					} else {
-						buttonText.attr('data-progress-button-text', scope.inProgressText)
-						buttonText.addClass('force-refresh').removeClass('force-refresh')
+						buttonText.text(scope.inProgressText)
 						bar.css('display', 'block')
 					}
 
@@ -79,4 +76,4 @@ angular.module('progressButton', [])
 				}
 			}
 		}
-	})
+	});

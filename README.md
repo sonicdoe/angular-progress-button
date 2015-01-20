@@ -75,6 +75,10 @@ You can also execute a single run in PhantomJS using `grunt test`.
 
 ## Release History
 
+- v0.2.0 (2015-01-20):
+    - Remove custom color themes
+    - Drop `-moz-` prefix for CSS transitions and CSS gradients
+    - Dynamically resize buttons to fit text in any state
 - v0.1.1 (2014-08-03): Add minified version (see `dist/`)
 - v0.1.0 (2014-06-14): Initial release
 

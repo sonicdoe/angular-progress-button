@@ -7,32 +7,19 @@
 	line-height: 1;
 	overflow: hidden;
 	position: relative;
+	cursor: pointer;
 
 	box-shadow: 0 1px 1px #ccc;
 	border-radius: 2px;
 
 	background-color: #51b7e6;
 	background-image: -webkit-linear-gradient(top, #51b7e6, #4dafdd);
-	background-image: -moz-linear-gradient(top, #51b7e6, #4dafdd);
 	background-image: linear-gradient(top, #51b7e6, #4dafdd);
 }
 
-.progress-button {
-	cursor: pointer;
-}
-
 .progress-button-text {
-	color: transparent;
-}
-
-.progress-button-text:after {
-	content: attr(data-progress-button-text);
 	color: #fff;
-	text-align: center;
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	position: relative;
 	z-index: 2;
 }
 
@@ -50,7 +37,6 @@
 	border-radius: 0 0 2px 2px;
 
 	-webkit-transition: width 0.5s, height 0.5s;
-	-moz-transition: width 0.5s, height 0.5s;
 	transition: width 0.5s, height 0.5s;
 }
 
@@ -66,31 +52,4 @@
 	top: 0;
 	width: 100%;
 	border-radius: 2px;
-}
-
-/*
- * Custom color themes for the example page
- */
-
-.progress-button.red {
-	background-color: #e6537d;
-	background-image: -webkit-linear-gradient(top, #e6537d, #df5179);
-	background-image: -moz-linear-gradient(top, #e6537d, #df5179);
-	background-image: linear-gradient(top, #e6537d, #df5179);
-}
-
-.progress-button.red .progress-button-bar {
-	background-color: #6876b4;
-}
-
-
-.progress-button.green {
-	background-color: #64c896;
-	background-image: -webkit-linear-gradient(top, #64c896, #5fbd8e);
-	background-image: -moz-linear-gradient(top, #64c896, #5fbd8e);
-	background-image: linear-gradient(top, #64c896, #5fbd8e);
-}
-
-.progress-button.green .progress-button-bar {
-	background-color: #9e81d6;
 }
