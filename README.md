@@ -17,22 +17,33 @@ $ bower install angular-progress-button
 
 Then include both files.
 
-### HTML
-
-```html
-<!-- Simple button -->
-<progress-button value="progress">Button</a>
-
-<!-- Horizontal type -->
-<progress-button value="progress" type="horizontal">Button</a>
-
-<!-- Custom in-progress and completion text -->
-<progress-button value="progress" in-progress="Generating…" complete="Download">Generate</a>
-```
-
-### Attributes
-
-#### value (*Number*)
+ ### HTML
+ 
++#### As tag name
++
+ ```html
+ <!-- Simple button -->
+ <progress-button value="progress">Button</a>
+ @@ -30,6 +32,19 @@ Then include both files.
+ <progress-button value="progress" in-progress="Generating…" complete="Download">Generate</a>
+ ```
+ 
++#### As attribute
++
++```html
++<!-- Simple button -->
++<button progress-button value="progress">Button</button>
++
++<!-- Horizontal type -->
++<button progress-button value="progress" type="horizontal">Button</button>
++
++<!-- <a/> tag with custom in-progress and completion text -->
++<a progress-button value="progress" in-progress="Generating…" complete="Download">Generate</a>
++```
++
+ ### Attributes
+ 
+ #### value (*Number*)
 
 Progress value, must range from `0` (default) to `1.0`.
 
