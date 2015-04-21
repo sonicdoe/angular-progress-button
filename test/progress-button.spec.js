@@ -35,7 +35,7 @@ describe('progress-button directive', function() {
 		scope.progress = 0.5
 		scope.$apply()
 
-		expect(buttonTextElement.attr('data-progress-button-text')).toBe('Loading…')
+		expect(buttonTextElement.text()).toBe('Loading…')
 	})
 
 	it('shows the default completion text if progress = 1.0', function() {
@@ -44,7 +44,7 @@ describe('progress-button directive', function() {
 		scope.progress = 1.0
 		scope.$apply()
 
-		expect(buttonTextElement.attr('data-progress-button-text')).toBe('Complete.')
+		expect(buttonTextElement.text()).toBe('Complete.')
 	})
 
 	it('shows the specified in-progress text if applicable', function() {
@@ -53,7 +53,7 @@ describe('progress-button directive', function() {
 		scope.progress = 0.5
 		scope.$apply()
 
-		expect(buttonTextElement.attr('data-progress-button-text')).toBe('Text')
+		expect(buttonTextElement.text()).toBe('Text')
 	})
 
 	it('shows the specified completion text if applicable', function() {
@@ -62,7 +62,7 @@ describe('progress-button directive', function() {
 		scope.progress = 1.0
 		scope.$apply()
 
-		expect(buttonTextElement.attr('data-progress-button-text')).toBe('Text')
+		expect(buttonTextElement.text()).toBe('Text')
 	})
 
 	it('sets the bar’s width to 50% if progress = 0.5', function() {
