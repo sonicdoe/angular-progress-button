@@ -1,7 +1,7 @@
 angular.module('progressButton', [])
 	.directive('progressButton', function($timeout) {
 		return {
-			restrict: 'E',
+			restrict: 'AE',
 			transclude: true,
 			replace: true,
 			scope: {
